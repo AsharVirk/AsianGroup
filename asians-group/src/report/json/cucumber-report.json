@@ -1,0 +1,2066 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "to-check-and-verify-the-login-functionality;verify-the-login-of-user-with-correct-credentials",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Verify the login of user with correct credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3890000000
+            },
+            "embeddings": [
+              {
+                "data": "Environment: https://console.uat.asians.group/#/domain/list",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user lands on \"Asians User System\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 540000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "verify user is on \"Sign in to your account\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3020000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "user inputs email \"abc@xyz.com\"",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2045000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "user inputs password \"12345\"",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2029000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "user clicks on \"Sign In\" button",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1021000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "verify the user is logged in",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3697000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 241000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@loginFunctionality",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 1
+          },
+          {
+            "name": "@TC_Login_01_01",
+            "line": 4
+          },
+          {
+            "name": "@smoke",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "to-check-and-verify-the-login-functionality;verify-the-login-of-user-with-incorrect-credentials",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Verify the login of user with incorrect credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3712000000
+            },
+            "embeddings": [
+              {
+                "data": "Environment: https://console.uat.asians.group/#/domain/list",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "user lands on \"Asians User System\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 356000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "verify user is on \"Sign in to your account\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3009000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "user inputs email \"abc@xyz.com\"",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2045000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "user inputs password \"54321\"",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2030000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "user clicks on \"Sign In\" button",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1029000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "verify the invalid username and passowrd error is shown \"Invalid username or password.\"",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 233000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@loginFunctionality",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 1
+          },
+          {
+            "name": "@TC_Login_02",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_01",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_02",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_03",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_04",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_05",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_06",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "to-check-and-verify-the-login-functionality;verify-the-login-of-user-with-incorrect-credentials",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Verify the login of user with incorrect credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3821000000
+            },
+            "embeddings": [
+              {
+                "data": "Environment: https://console.uat.asians.group/#/domain/list",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "user lands on \"Asians User System\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 366000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "verify user is on \"Sign in to your account\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3019000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "user inputs email \"xyz@abc.com\"",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2038000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "user inputs password \"12345\"",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2036000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "user clicks on \"Sign In\" button",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1023000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "verify the invalid username and passowrd error is shown \"Invalid username or password.\"",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 233000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@loginFunctionality",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 1
+          },
+          {
+            "name": "@TC_Login_02",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_01",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_02",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_03",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_04",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_05",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_06",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "to-check-and-verify-the-login-functionality;verify-the-login-of-user-with-incorrect-credentials",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Verify the login of user with incorrect credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3693000000
+            },
+            "embeddings": [
+              {
+                "data": "Environment: https://console.uat.asians.group/#/domain/list",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "user lands on \"Asians User System\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 515000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "verify user is on \"Sign in to your account\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3013000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "user inputs email \"xyz@abc.com\"",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2044000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "user inputs password \"54321\"",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2033000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "user clicks on \"Sign In\" button",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1025000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "verify the invalid username and passowrd error is shown \"Invalid username or password.\"",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 10000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 245000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@loginFunctionality",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 1
+          },
+          {
+            "name": "@TC_Login_02",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_01",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_02",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_03",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_04",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_05",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_06",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "to-check-and-verify-the-login-functionality;verify-the-login-of-user-with-incorrect-credentials",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Verify the login of user with incorrect credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3993000000
+            },
+            "embeddings": [
+              {
+                "data": "Environment: https://console.uat.asians.group/#/domain/list",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "user lands on \"Asians User System\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 356000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "verify user is on \"Sign in to your account\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3007000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "user inputs email \"\"",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2024000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "user inputs password \"12345\"",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2031000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "user clicks on \"Sign In\" button",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1023000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "verify the invalid username and passowrd error is shown \"Invalid username or password.\"",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 216000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@loginFunctionality",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 1
+          },
+          {
+            "name": "@TC_Login_02",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_01",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_02",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_03",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_04",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_05",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_06",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "to-check-and-verify-the-login-functionality;verify-the-login-of-user-with-incorrect-credentials",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Verify the login of user with incorrect credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3579000000
+            },
+            "embeddings": [
+              {
+                "data": "Environment: https://console.uat.asians.group/#/domain/list",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "user lands on \"Asians User System\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 510000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "verify user is on \"Sign in to your account\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3005000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "user inputs email \"abc@xyz.com\"",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2044000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "user inputs password \"\"",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2025000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "user clicks on \"Sign In\" button",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1018000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "verify the invalid username and passowrd error is shown \"Invalid username or password.\"",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 225000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@loginFunctionality",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 1
+          },
+          {
+            "name": "@TC_Login_02",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_01",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_02",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_03",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_04",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_05",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_06",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "to-check-and-verify-the-login-functionality;verify-the-login-of-user-with-incorrect-credentials",
+        "keyword": "Scenario Outline",
+        "line": 14,
+        "name": "Verify the login of user with incorrect credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3526000000
+            },
+            "embeddings": [
+              {
+                "data": "Environment: https://console.uat.asians.group/#/domain/list",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 15,
+            "name": "user lands on \"Asians User System\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 541000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 16,
+            "name": "verify user is on \"Sign in to your account\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3019000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "user inputs email \"\"",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2022000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "user inputs password \"\"",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:21"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2025000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "user clicks on \"Sign In\" button",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1022000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "verify the invalid username and passowrd error is shown \"Invalid username or password.\"",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 228000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@loginFunctionality",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 1
+          },
+          {
+            "name": "@TC_Login_02",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_01",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_02",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_03",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_04",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_05",
+            "line": 13
+          },
+          {
+            "name": "@TC_Login_02_06",
+            "line": 13
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "to-check-and-verify-the-login-functionality",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "To Check and Verify the Login Functionality",
+    "tags": [
+      {
+        "name": "@loginFunctionality",
+        "line": 1
+      },
+      {
+        "name": "@e2e",
+        "line": 1
+      }
+    ],
+    "uri": "src\\features\\suiteLogin\\login.feature"
+  },
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "to-check-and-verify-the-register-functionality;verify-the-user-can-register-with-correct-credentials",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "Verify the user can register with correct credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3703000000
+            },
+            "embeddings": [
+              {
+                "data": "Environment: https://console.uat.asians.group/#/domain/list",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 6,
+            "name": "user lands on \"Asians User System\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 513000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 7,
+            "name": "verify user is on \"Sign in to your account\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3016000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 8,
+            "name": "user clicks on register button",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1027000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "verify user is on \"Register\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3023000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 10,
+            "name": "user inputs random email on register page",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2047000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "user inputs password \"12345\" on register page",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2034000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 12,
+            "name": "user inputs confirm password \"12345\" on register page",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2025000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 13,
+            "name": "user clicks on \"Register\" button",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1026000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "verify the user is logged in",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3584000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 237000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registerFunctionality",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 1
+          },
+          {
+            "name": "@TS_Register_01_01",
+            "line": 4
+          },
+          {
+            "name": "@smoke",
+            "line": 4
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "to-check-and-verify-the-register-functionality;verify-the-user-cannot-register-again-with-the-same-credentials",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Verify the user cannot register again with the same credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3555000000
+            },
+            "embeddings": [
+              {
+                "data": "Environment: https://console.uat.asians.group/#/domain/list",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 18,
+            "name": "user lands on \"Asians User System\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 511000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 19,
+            "name": "verify user is on \"Sign in to your account\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3013000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 20,
+            "name": "user clicks on register button",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1027000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 21,
+            "name": "verify user is on \"Register\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3011000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "user inputs email \"abc@xyz.com\" on register page",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2043000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "user inputs password \"12345\" on register page",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2030000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 24,
+            "name": "user inputs confirm password \"12345\" on register page",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2030000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "user clicks on \"Register\" button",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1023000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "verify the error \"Email already exists.\"",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3012000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 207000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registerFunctionality",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 1
+          },
+          {
+            "name": "@TS_Register_02_01",
+            "line": 16
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "to-check-and-verify-the-register-functionality;verify-the-user-cannot-register-with-the-existing-email-but-no-password-credentials",
+        "keyword": "Scenario",
+        "line": 29,
+        "name": "Verify the user cannot register with the existing email but no password credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3545000000
+            },
+            "embeddings": [
+              {
+                "data": "Environment: https://console.uat.asians.group/#/domain/list",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 30,
+            "name": "user lands on \"Asians User System\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 518000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 31,
+            "name": "verify user is on \"Sign in to your account\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3006000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 32,
+            "name": "user clicks on register button",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1033000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "verify user is on \"Register\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3023000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "user inputs email \"abc@xyz.com\" on register page",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2039000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 35,
+            "name": "user inputs password \"\" on register page",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2023000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 36,
+            "name": "user inputs confirm password \"\" on register page",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2010000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 37,
+            "name": "user clicks on \"Register\" button",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1020000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "verify the error \"Email already exists.\"",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3013000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 39,
+            "name": "verify the error \"Please specify password.\"",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3013000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 205000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registerFunctionality",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 1
+          },
+          {
+            "name": "@TS_Register_02_02",
+            "line": 28
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "to-check-and-verify-the-register-functionality;verify-the-user-cannot-register-again-with-the-existing-email-but-different-password-credentials",
+        "keyword": "Scenario",
+        "line": 42,
+        "name": "Verify the user cannot register again with the existing email but different password credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3695000000
+            },
+            "embeddings": [
+              {
+                "data": "Environment: https://console.uat.asians.group/#/domain/list",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 43,
+            "name": "user lands on \"Asians User System\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 511000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 44,
+            "name": "verify user is on \"Sign in to your account\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3010000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 45,
+            "name": "user clicks on register button",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1031000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 46,
+            "name": "verify user is on \"Register\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3021000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 47,
+            "name": "user inputs email \"abc@xyz.com\" on register page",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:17"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2036000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 48,
+            "name": "user inputs password \"12345\" on register page",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2034000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 49,
+            "name": "user inputs confirm password \"54321\" on register page",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2027000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 50,
+            "name": "user clicks on \"Register\" button",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1027000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 51,
+            "name": "verify the error \"Email already exists.\"",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3020000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 52,
+            "name": "verify the error \"Password confirmation doesn't match.\"",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3016000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 218000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registerFunctionality",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 1
+          },
+          {
+            "name": "@TS_Register_02_03",
+            "line": 41
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "to-check-and-verify-the-register-functionality;verify-the-user-cannot-register-valid-email-but-no-password-credentials",
+        "keyword": "Scenario",
+        "line": 55,
+        "name": "Verify the user cannot register valid email but no password credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3533000000
+            },
+            "embeddings": [
+              {
+                "data": "Environment: https://console.uat.asians.group/#/domain/list",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 56,
+            "name": "user lands on \"Asians User System\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 511000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 57,
+            "name": "verify user is on \"Sign in to your account\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3016000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 58,
+            "name": "user clicks on register button",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1034000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 59,
+            "name": "verify user is on \"Register\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3010000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 60,
+            "name": "user inputs random email on register page",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2047000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 61,
+            "name": "user inputs password \"\" on register page",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2027000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 62,
+            "name": "user inputs confirm password \"\" on register page",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2014000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 63,
+            "name": "user clicks on \"Register\" button",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1021000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 64,
+            "name": "verify the error \"Please specify password.\"",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3012000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 229000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registerFunctionality",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 1
+          },
+          {
+            "name": "@TS_Register_03_01",
+            "line": 54
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "to-check-and-verify-the-register-functionality;verify-the-user-cannot-register-valid-email-but-different-password-credentials",
+        "keyword": "Scenario",
+        "line": 67,
+        "name": "Verify the user cannot register valid email but different password credentials",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 3694000000
+            },
+            "embeddings": [
+              {
+                "data": "Environment: https://console.uat.asians.group/#/domain/list",
+                "mime_type": "text/plain"
+              }
+            ]
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 68,
+            "name": "user lands on \"Asians User System\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 515000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 69,
+            "name": "verify user is on \"Sign in to your account\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3019000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 70,
+            "name": "user clicks on register button",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:32"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1031000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 71,
+            "name": "verify user is on \"Register\" page",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3013000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 72,
+            "name": "user inputs random email on register page",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:5"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2053000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 73,
+            "name": "user inputs password \"12345\" on register page",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:9"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2036000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 74,
+            "name": "user inputs confirm password \"54321\" on register page",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:13"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2024000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 75,
+            "name": "user clicks on \"Register\" button",
+            "match": {
+              "location": "src\\features\\steps\\loginSteps.js:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1027000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 76,
+            "name": "verify the error \"Password confirmation doesn't match.\"",
+            "match": {
+              "location": "src\\features\\steps\\registerSteps.js:20"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 3014000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 215000000
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@registerFunctionality",
+            "line": 1
+          },
+          {
+            "name": "@e2e",
+            "line": 1
+          },
+          {
+            "name": "@TS_Register_03_02",
+            "line": 66
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "to-check-and-verify-the-register-functionality",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "To Check and Verify the Register Functionality",
+    "tags": [
+      {
+        "name": "@registerFunctionality",
+        "line": 1
+      },
+      {
+        "name": "@e2e",
+        "line": 1
+      }
+    ],
+    "uri": "src\\features\\suiteRegister\\register.feature"
+  }
+]

@@ -1,0 +1,8 @@
+{
+  "urls": {
+    "url": "https://console.uat.asians.group/#/domain/list",
+    "qaURL": "https://console.uat.asians.group/#/domain/list",
+    "prodURL": "https://console.uat.asians.group/#/domain/list"
+
+  }
+}

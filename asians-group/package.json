@@ -1,0 +1,38 @@
+{
+          "name": "kualitee-puppeteer-cucumber-boilerplate",
+          "version": "1.0.0",
+          "description": "Puppeteer and Cucumber Boilerplate by Kualitatem",
+          "type": "parallel",
+          "devDependencies": {
+                    "@babel/core": "^7.16.7",
+                    "@babel/preset-env": "^7.16.8",
+                    "@babel/register": "^7.16.9",
+                    "@cucumber/cucumber": "^7.3.2",
+                    "@cucumber/pretty-formatter": "^1.0.0-alpha.1",
+                    "chai": "^4.3.4",
+                    "cucumber-html-reporter": "^5.5.0",
+                    "fs-extra": "^10.0.0",
+                    "npm-run-all": "^4.1.5",
+                    "prettier": "^2.5.1",
+                    "puppeteer": "^19.7.3"
+          },
+          "scripts": {
+                    "qa": "node --experimental-json-modules src/utilities/helper/environmentSetup.mjs qa",
+                    "bank": "node --experimental-json-modules src/utilities/helper/environmentSetup.mjs bank",
+                    "cucumber": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --require-module @babel/register -f json:./src/report/json/cucumber-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/rerun.txt",
+                    "cucumber-tag": "node node_modules/@cucumber/cucumber/bin/cucumber-js ./src/features/ --tags @registerFunctionality --require-module @babel/register -f json:./src/report/json/cucumber-report.json --publish-quiet -f @cucumber/pretty-formatter -f rerun:./src/report/rerun/rerun.txt",
+                    "report": "node ./src/utilities/report.mjs",
+                    "clear": "node src/utilities/clearDirectory.mjs",
+                    "test": "run-s -c i clear cucumber report",
+                    "test-tag": "run-s -c i clear cucumber-tag report",
+                    "test-envs": "run-s -c i clear qa cucumber-tag prod cucumber-tag report",
+                    "rerun-parallel": "run-p -c build-rerun cycle-rerun defect-rerun manageCycle-rerun module-rerun project-rerun requirement-rerun team-rerun testCase-rerun testExecution-rerun testScenario-rerun",
+                    "runner-rerun": "run-s -c i rerun-parallel report",
+                    "smoke-parallel": "run-p -c defect-smoke build-smoke module-smoke project-smoke requirement-smoke team-smoke cycle-smoke testCase-smoke testScenario-smoke",
+                    "runner-smoke": "run-s -c i clear smoke-parallel report",
+                    "run-parallel": "run-p -c defect build module project requirement team cycle manageCycle testExecution testCase testScenario",
+                    "runner": "run-s -c i clear run-parallel report",
+                    "kill": "taskkill /IM \"chrome.exe\" /F",
+                    "i": "npm install"
+          }
+}

@@ -1,0 +1,24 @@
+{
+  "asiansGroup": {
+    "navigation": {
+      "dashBoardHeader": "//div[contains(@id,'header')]/span",
+      "header": "//h1[contains(@id,'page-title')]"
+    },
+    "loginPage" : {
+      "usernameField": "//input[@id='username']",
+      "passwordField": "//input[@id='password']",
+      "loginButton": "//input[@name='login']",
+      "registerButton": "//a[text()='Register']",
+      "invalidCredsError": "//span[@id='input-error']"
+    },
+    "registerPage": {
+      "emailField": "//input[@id='email']",
+      "passwordField": "//input[@id='password']",
+      "passwordConfirmField": "//input[@id='password-confirm']",
+      "error": "//span[contains(@class,'alert__title')]"
+    },
+    "dashboard": {
+      "loginLogo": "//img[contains(@alt,'Vue logo')]"
+    }
+  }
+}
